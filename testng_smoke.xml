@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Test suite" parallel="classes" thread-count="2">
+    <test name="Regression tests">
+<!--        only those grouped as smoke will be executing-->
+        <groups>
+            <run>
+                <include name="smoke"/>
+
+            </run>
+        </groups>
+
+
+
+        <classes>
+            <class name="tests.handleChildTabTest"></class>
+            <class name="tests.DataProviderDemo"></class>
+            <class name="tests.createEvent"></class>
+            <class name="tests.Data_from_jsonTest"></class>
+
+        </classes>
+    </test>
+</suite>

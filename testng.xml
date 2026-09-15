@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Test suite" parallel="classes" thread-count="3">
+    <test name="Regression tests">
+        <classes>
+            <class name="tests.handleChildTab"></class>
+            <class name="tests.DataProviderDemo"></class>
+            <class name="tests.createEvent"></class>
+            <class name="tests.Data_from_json"></class>
+
+        </classes>
+    </test>
+</suite>

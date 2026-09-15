@@ -1,0 +1,80 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 3,
+      "title": "Dilli Diwali Mela",
+      "description": "Celebrate the Festival of Lights at the grandest Diwali Mela in North India. Enjoy 200+ stalls of artisanal crafts, street food, folk performances, fireworks, and cultural showcases spanning three vibrant evenings.",
+      "category": "Festival",
+      "venue": "Pragati Maidan Exhibition Grounds",
+      "city": "Delhi",
+      "eventDate": "2026-10-20T17:00:00.000Z",
+      "price": "300",
+      "totalSeats": 10000,
+      "availableSeats": 8,
+      "imageUrl": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800",
+      "isStatic": true,
+      "userId": null,
+      "createdAt": "2026-02-22T23:03:37.680Z",
+      "updatedAt": "2026-05-29T05:44:25.067Z"
+    },
+    {
+      "id": 2,
+      "title": "Hollywood Monsoon Night — Los Angeles",
+      "description": "An unforgettable evening of live music performed by A-list playback singers under the open Mumbai sky. Featuring chart-toppers from the last three decades with a stunning light show and pyrotechnics.",
+      "category": "Concert",
+      "venue": "Dome, NSCI SVP Stadium, Worli",
+      "city": "Los Angeles",
+      "eventDate": "2026-07-11T19:00:00.000Z",
+      "price": "2500",
+      "totalSeats": 3000,
+      "availableSeats": 8,
+      "imageUrl": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800",
+      "isStatic": true,
+      "userId": null,
+      "createdAt": "2026-02-22T23:03:37.669Z",
+      "updatedAt": "2026-07-07T06:33:50.248Z"
+    },
+
+    {
+      "id": 93557,
+      "title": "Event Hub API Test",
+      "description": "Test test",
+      "category": "Workshop",
+      "venue": "Test venue",
+      "city": "Test city",
+      "eventDate": "2026-08-19T10:50:00.000Z",
+      "price": "100",
+      "totalSeats": 60,
+      "availableSeats": 60,
+      "imageUrl": null,
+      "isStatic": false,
+      "userId": 33794,
+      "createdAt": "2026-08-11T13:26:26.501Z",
+      "updatedAt": "2026-08-11T13:26:26.501Z"
+    },
+    {
+      "id": 93470,
+      "title": "API Test Event",
+      "description": "Test test",
+      "category": "Workshop",
+      "venue": "Test venue",
+      "city": "Test city",
+      "eventDate": "2026-08-19T10:50:00.000Z",
+      "price": "100",
+      "totalSeats": 60,
+      "availableSeats": 60,
+      "imageUrl": null,
+      "isStatic": false,
+      "userId": 33794,
+      "createdAt": "2026-08-11T10:46:10.651Z",
+      "updatedAt": "2026-08-11T13:25:14.848Z"
+    }
+  ],
+  "pagination": {
+    "total": 7,
+    "page": 1,
+    "limit": 12,
+    "totalPages": 1
+  }
+}
