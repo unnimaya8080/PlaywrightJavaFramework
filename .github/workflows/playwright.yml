@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
         browser:
-            description: 'Browser to run tests on'
+          description: 'Browser to run tests on'
             required: true
             default: 'chromium'
             options:
@@ -32,4 +32,12 @@ jobs:
       - name: Ensure browsers are installed
         run: mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps"
       - name: Run tests
-        run: mvn test -PFramework -Dbrowser=${{ github.event.inputs.browser }} -D allure.results.directory=target/allure-results
+        run: mvn test -PFramework -Dbrowser=${{ github.event.inputs.browser }}
+      - name: Generate Allure Report
+        run: mvn allure:report
+
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: target/allure-report
