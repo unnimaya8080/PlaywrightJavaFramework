@@ -11,7 +11,7 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 
 public class CancelBookingTest extends TestBase{
 
-    @Test(description = "Cancel an existing booking and verify it's removed", groups = "framework")
+    @Test(description = "Cancel an existing booking and verify it's removed")
     public void cancelBookingFlow() {
         page.screenshot();
         // Login
