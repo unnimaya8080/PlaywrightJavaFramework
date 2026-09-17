@@ -43,12 +43,13 @@ public class TestBase {
         }
         else if ("safari".equals(browserName))
         {
-            browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            browser = playwright.webkit().launch();
+            //browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
         }
         else
         {
             browser = playwright.chromium().launch();
-            browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+//            browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
         }
 
 
