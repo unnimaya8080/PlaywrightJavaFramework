@@ -38,7 +38,8 @@ public class TestBase {
         //code for invoking browser
         if("firefox".equals(browserName))
         {
-            browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
+//            browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            browser = playwright.firefox().launch();
         }
         else if ("safari".equals(browserName))
         {
@@ -46,6 +47,7 @@ public class TestBase {
         }
         else
         {
+            browser = playwright.chromium().launch();
             browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
         }
 
