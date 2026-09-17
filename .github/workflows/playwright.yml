@@ -16,7 +16,6 @@ on:
               - chromium
               - firefox
               - safari
-
 jobs:
   test:
     timeout-minutes: 60
